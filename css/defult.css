@@ -41,11 +41,11 @@
     padding: 0 0 71px 0;
     z-index: 9999;
 }
-.sec .pic-list{
+.sec .pic{
     display: flex;
     flex-flow: row wrap;
 }
-.sec .pic-list li{
+.sec .pic .img-box{
     width: 33.333333%;
 }
 
@@ -82,3 +82,8 @@
     color: #666;
     margin-bottom: 2px;
 }
+
+/* modal */
+/* .modal{
+    display: none;
+} */
