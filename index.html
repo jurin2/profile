@@ -23,10 +23,196 @@
     <meta name="twitter:image" content="./images/og-img.jpg">
     <meta name="twitter:description" content="나를 소개해보세요">
 
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- font-awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    .wrap{
+        width:100%;
+        overflow:hidden;
+    }
+
+    /* header */
+    .header .container{
+        background-color: #004a80;
+    }
+    .header .img-box img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 25px 30px;   
+    }
+    .header .inner{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .header .profile-txt{
+        color: #fff;
+    }
+    .header .profile-txt h2{
+        margin: 34px 0 10px 0;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .header .profile-txt p{
+        margin-bottom: 3px;
+        font-size: 14px;
+    }
+    .header .profile-txt p:last-child{
+        margin-bottom: 0;
+    }
+
+    /* section */
+    .sec .pic-list{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .sec .pic-list li{
+        width: 33.333333%;
+    }
+
+    .nav{
+        background-color: #d7d7d7;
+    }
+    .nav .nav-list{
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1;
+        flex-basis: 33.3333%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 36px;
+
+    }
+    .nav .nav-list i{
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        color: #666;
+        margin: 3px 0 3px;
+        
+    }
+    .nav .nav-list span{
+        text-align: center;
+        color: #666;
+        margin-bottom: 2px;
+    }
+    
+    </style>
+
+    <script>
+
+    </script>
 
     <title>Profile</title>
 </head>
 <body>
-    
+    <section class="wrap">
+        <header class="header">
+            <div class="container">
+                <div class="inner">
+                    <div class="img-box">
+                        <a href="#"><img src="./images/img-profile.jpg" alt="프로필사진"></a>
+                    </div>
+                    <div class="profile-txt">
+                        <h2>김남자</h2>
+                        <p>아이디 : namka77</p>
+                        <p>이메일 : mail@mail.com</p>
+                        <p>연락처 : 010-1234-5678</p>
+                    </div>   
+                </div> 
+            </div>
+        </header>
+        <section class="sec">
+           <div class="container">
+                <article class="pic">
+                    <ul class="pic-list">
+                        <li>
+                            <a href="#">
+                                <img src="./images/pic01.jpg" alt="캐나다 여행사진">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                                <img src="./images/pic02.jpg" alt="제주 여행사진">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                                <img src="./images/pic03.jpg" alt="공항사진">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                                <img src="./images/pic04.jpg" alt="여권사진">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                                <img src="./images/pic05.jpg" alt="캐리어사진">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                                <img src="./images/pic06.jpg" alt="일본 오사카 여행사진">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                                <img src="./images/pic07.jpg" alt="크리스마스 사진">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                                <img src="./images/pic08.jpg" alt="크리스마스 사진">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                                <img src="./images/pic09.jpg" alt="크리스마스 사진">
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+           </div> 
+        </section>
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                           <span>프로필</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-image"></i>
+                            <span>앨범</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                            <span>게시물</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user-friends"></i>
+                            <span>친구</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </section>
+
 </body>
 </html>
