@@ -33,31 +33,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        .modal{
-            display: none;
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-            z-index: 999999;
-            background-color: rgba(0,0,0,0.5);
-        }
-        .modal .contents{
-            width: 70%;
-            margin: 50% auto;
-            background-color: #fff;
-        } 
-        .modal .contents .img-box{
-            width: 100%;
-        }
-        .modal .contents h3{
-            padding: 10px;
-            text-align: center;
-            font-weight: 600;
-            font-size: 18px;
-        }
+ 
     </style>
 
     
@@ -81,227 +57,262 @@
                 </div> 
             </div>
         </header>
-        <section class="sec">
+        <section class="sec clearfix">
            <div class="container">
-                <article class="pic" id="pic">
-                    <!-- <a class="modal_close_btn">닫기</a> -->
+                <article class="pic" id="pic01">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic01.jpg" alt="캐나다 여행사진">
+                        </a>
+                    </div>
+                </article>        
+                    <div class="modal" id="modal01">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic01.jpg" alt="캐나다 여행사진"></div>
+                            <h3>캐나다 여행</h3>
+                            <span class="close">[닫기]</span>
+                        </div>
+                    </div>
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic01.jpg" alt="캐나다 여행사진">
-                            </a>
-                        </div>
-                        <div class="modal" id="modal01">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic01.jpg" alt="캐나다 여행사진"></div>
-                                <h3>캐나다 여행</h3>
-                            </div>
-                        </div>
-
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic02.jpg" alt="제주도 여행사진">
-                            </a>
-                        </div>
-                        <!-- <div class="modal" id="modal02">
+                <article class="pic" id="pic02">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic02.jpg" alt="제주도 여행사진">
+                        </a>
+                    </div>
+                </article>  
+                    <div class="modal" id="modal01">
                             <div class="contents">
                                 <div class="img-box"><img src="./images/pic02.jpg" alt="제주도 여행사진"></div>
                                 <h3>제주도 여행</h3>
+                                <span class="close">[닫기]</span>
                             </div>
-                        </div> -->
-
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic03.jpg" alt="공항사진">
-                            </a>
                         </div>
-                        <!-- <div class="modal" id="modal03">
+
+                <article class="pic" id="pic03">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic03.jpg" alt="공항사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal03">
                             <div class="contents">
                                 <div class="img-box"><img src="./images/pic03.jpg" alt="공항사진"></div>
                                 <h3>공항사진</h3>
                             </div>
                         </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic04.jpg" alt="여권 사진">
-                            </a>
-                        </div>
-                        <!-- <div class="modal" id="modal04">
+                <article class="pic" id="pic04">      
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic04.jpg" alt="여권 사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal04">
                             <div class="contents">
                                 <div class="img-box"><img src="./images/pic04.jpg" alt="여권 사진"></div>
                                 <h3>여권사진</h3>
                             </div>
                         </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic05.jpg" alt="캐리어 사진">
-                            </a>
+                <article class="pic" id="pic05">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic05.jpg" alt="캐리어 사진">
+                        </a>
+                    </div>
+                </article>    
+                    <!-- <div class="modal" id="modal05">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic05.jpg" alt="캐리어 사진"></div>
+                            <h3>캐리어 사진</h3>
                         </div>
-                        <!-- <div class="modal" id="modal05">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic05.jpg" alt="캐리어 사진"></div>
-                                <h3>캐리어 사진</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic06.jpg" alt="일본 오사카 여행사진">
-                            </a>
+                <article class="pic" id="pic06">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic06.jpg" alt="일본 오사카 여행사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal06">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic06.jpg" alt="일본 오사카 여행사진"></div>
+                            <h3>일본 오사카 여행</h3>
                         </div>
-                        <!-- <div class="modal" id="modal06">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic06.jpg" alt="일본 오사카 여행사진"></div>
-                                <h3>일본 오사카 여행</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic07.jpg" alt="크리스마스 사진1">
-                            </a>
+                <article class="pic" id="pic07">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic07.jpg" alt="크리스마스 사진1">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal07">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic07.jpg" alt="크리스마스 사진1"></div>
+                            <h3>크리스마스1</h3>
                         </div>
-                        <!-- <div class="modal" id="modal07">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic07.jpg" alt="크리스마스 사진1"></div>
-                                <h3>크리스마스1</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic08.jpg" alt="크리스마스 사진2">
-                            </a>
+                <article class="pic" id="pic08">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic08.jpg" alt="크리스마스 사진2">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal08">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic08.jpg" alt="크리스마스 사진2"></div>
+                            <h3>크리스마스2</h3>
                         </div>
-                        <!-- <div class="modal" id="modal08">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic08.jpg" alt="크리스마스 사진2"></div>
-                                <h3>크리스마스2</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic09.jpg" alt="크리스마스 사진3">
-                            </a>
+                <article class="pic" id="pic09">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic09.jpg" alt="크리스마스 사진3">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal09">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic09.jpg" alt="크리스마스 사진3"></div>
+                            <h3>크리스마스3</h3>
                         </div>
-                        <!-- <div class="modal" id="modal09">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic09.jpg" alt="크리스마스 사진3"></div>
-                                <h3>크리스마스3</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic10.jpg" alt="첨성대 사진">
-                            </a>
+                <article class="pic" id="pic10">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic10.jpg" alt="첨성대 사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal10">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic10.jpg" alt="첨성대 사진"></div>
+                            <h3>경주 첨성대 여행</h3>
                         </div>
-                        <!-- <div class="modal" id="modal10">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic10.jpg" alt="첨성대 사진"></div>
-                                <h3>경주 첨성대 여행</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic11.jpg" alt="가을 사진">
-                            </a>
+                <article class="pic" id="pic11">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic11.jpg" alt="가을 사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal11">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic11.jpg" alt="가을 사진"></div>
+                            <h3>가을길</h3>
                         </div>
-                        <!-- <div class="modal" id="modal11">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic11.jpg" alt="가을 사진"></div>
-                                <h3>가을길</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic12.jpg" alt="꽃밭 사진">
-                            </a>
+                <article class="pic" id="pic12">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic12.jpg" alt="꽃밭 사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal12">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic12.jpg" alt="꽃밭 사진"></div>
+                            <h3>꽃 축제</h3>
                         </div>
-                        <!-- <div class="modal" id="modal12">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic12.jpg" alt="꽃밭 사진"></div>
-                                <h3>꽃 축제</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic13.jpg" alt="알프스 사진">
-                            </a>
+                <article class="pic" id="pic13"> 
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic13.jpg" alt="알프스 사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal13">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic13.jpg" alt="알프스 사진"></div>
+                            <h3>알프스 여행</h3>
                         </div>
-                        <!-- <div class="modal" id="modal13">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic13.jpg" alt="알프스 사진"></div>
-                                <h3>알프스 여행</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic14.jpg" alt="숲 사진">
-                            </a>
+                <article class="pic" id="pic14">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic14.jpg" alt="숲 사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal14">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic14.jpg" alt="숲 사진"></div>
+                            <h3>숲 사진</h3>
                         </div>
-                        <!-- <div class="modal" id="modal14">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic14.jpg" alt="숲 사진"></div>
-                                <h3>숲 사진</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic15.jpg" alt="하와이 사진">
-                            </a>
+                <article class="pic" id="pic15">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic15.jpg" alt="하와이 사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal15">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic15.jpg" alt="하와이 사진"></div>
+                            <h3>하와이 여행</h3>
                         </div>
-                        <!-- <div class="modal" id="modal15">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic15.jpg" alt="하와이 사진"></div>
-                                <h3>하와이 여행</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic16.jpg" alt="도쿄 사진">
-                            </a>
+                <article class="pic" id="pic16">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic16.jpg" alt="도쿄 사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal16">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic16.jpg" alt="도쿄 사진"></div>
+                            <h3>도쿄 여행</h3>
                         </div>
-                        <!-- <div class="modal" id="modal16">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic16.jpg" alt="도쿄 사진"></div>
-                                <h3>도쿄 여행</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic17.jpg" alt="자유의 여신상 사진">
-                            </a>
+                <article class="pic" id="pic17">
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic17.jpg" alt="자유의 여신상 사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal17">
+                        <div class="contents">
+                            <div class="img-box"><img src="./images/pic17.jpg" alt="자유의 여신상 사진"></div>
+                            <h3>랜드마크 자유의 여신상</h3>
                         </div>
-                        <!-- <div class="modal" id="modal17">
-                            <div class="contents">
-                                <div class="img-box"><img src="./images/pic17.jpg" alt="자유의 여신상 사진"></div>
-                                <h3>랜드마크 자유의 여신상</h3>
-                            </div>
-                        </div> -->
+                    </div> -->
 
-                        <div class="img-box">
-                            <a href="#" onclick="return false">
-                                <img src="./images/pic18.jpg" alt="맨하탄 사진">
-                            </a>
-                        </div>
-                        <!-- <div class="modal" id="modal18">
+                <article class="pic" id="pic18">    
+                    <div class="img-box">
+                        <a href="#" onclick="return false">
+                            <img src="./images/pic18.jpg" alt="맨하탄 사진">
+                        </a>
+                    </div>
+                </article>
+                    <!-- <div class="modal" id="modal18">
                             <div class="contents">
                                 <div class="img-box"><img src="./images/pic18.jpg" alt="맨하탄 사진"></div>
                                 <h3>맨하탄 여행</h3>
                             </div>
                         </div>        -->
-                </article>
+                
            </div> 
         </section>
         <nav class="nav">
@@ -340,10 +351,14 @@
     <script src="./js/defult.js"></script>
 
     <script>
+          
+        let _pic = document.getElementById('pic01');
+        let _modal01 = document.getElementById('modal01');
+        modalBlock(_pic,_modal01);
+
         
-        let _pic = document.getElementById('pic');
-        let _modal = document.getElementById('modal01');
-        disBlock(_pic,_modal);
+        let _close = document.querySelectorAll('.close');
+        modalNone(_close);
     </script>
 
 </body>
