@@ -4,6 +4,7 @@
 .wrap{
     width:100%;
     overflow:hidden;
+    margin-bottom: 71px;
 }
 
 /* header */
@@ -37,9 +38,6 @@
 }
 
 /* section */
-section{
-    margin-bottom: 71px;
-}
 .sec .pic{
    float: left;
    width: 33.333333%;
@@ -53,13 +51,9 @@ section{
 
 /* navigation */
 .nav{
-    overflow:visible;
     position:fixed;
-    left:0;
     bottom:0;
-    z-index:200;
     width:100%;
-    margin:0;
     background-color: #d7d7d7;
 }
 .nav .nav-list{
