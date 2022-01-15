@@ -1,5 +1,5 @@
-function modalBlock(eventEle,_target){
-    eventEle.addEventListener('click',function(){
+function modalBlock(event,_target){
+    event.addEventListener('click',function(){
         _target.style.display = 'block';
     })
 }
@@ -13,9 +13,9 @@ function modalBlock(eventEle,_target){
     
 // }
 
-function modalNone(eventEleTarget){
-    for(let idx=0;idx<eventEleTarget.length;idx++){
-        eventEleTarget[idx].addEventListener('click',function(){
+function modalNone(eventTarget){
+    for(let idx=0;idx<eventTarget.length;idx++){
+        eventTarget[idx].addEventListener('click',function(){
             _modal01.style.display = 'none'; 
         })
     }    
